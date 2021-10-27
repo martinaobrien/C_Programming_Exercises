@@ -53,7 +53,7 @@ struct Shop createAndStockShop()//need to read in a file
     FILE * fp;
     char * line = NULL;
     size_t len = 0;
-    ssize_t read;
+    size_t read;
 
     fp = fopen("stock.csv","r"); //r = read rw = read write is what we are opening the file for
     if (fp == NULL)
