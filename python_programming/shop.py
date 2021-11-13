@@ -14,9 +14,9 @@ class ProductStock: #all treated like static container
     quantity: int
 
 @dataclass
-class Shop: #don't need to track the array
-    cash: float = 0.0
-    stock: List[ProductStock] # = field(default_factory=list) #means that when a new shop gets created, python uses a factory to generate a new lists
+class Shop: 
+    cash: float
+    stock: List[ProductStock]  #means that when a new shop gets created, python uses a factory to generate a new lists
      # dataclasses new on Python 3.7 - you will have to update to get them
 class Customer:
     name:str
