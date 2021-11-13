@@ -32,7 +32,6 @@ class Customer:
     budget:float
     shopping_list: List[ProductStock]
 
-<<<<<<< HEAD
 def create_and_stock_shop():#treat the first line of the csv different from the rest
     s = Shop(200.0, [])
     with open('../stock.csv') as csv_file: #../stock.csv - the .. means go up one level to retrieve the file so all programmes can access it
@@ -40,15 +39,6 @@ def create_and_stock_shop():#treat the first line of the csv different from the 
         first_row = next(csv_reader)
         print (first_row)
         #line_count = 0
-=======
-def create_and_stock_shop():
-    s = Shop () #(200.0, [])
-    with open('../stock.csv') as csv_file: #../stock.csv - the .. means go up one level to retrieve the file so all programmes can access it
-        csv_reader = csv.reader(csv_file,delimiter=',')
-        first row = next(csv_reader)
-        print(first row)
-        line_count = 0
->>>>>>> 794fff78c079dbe5a5de4bc70fbcdf746a482457
         for row in csv_reader:
             p = Product(row[0], float(row[1]))
             ps = ProductStock(p,float(row[2]))
