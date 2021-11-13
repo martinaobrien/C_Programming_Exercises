@@ -13,10 +13,10 @@ class ProductStock: #all treated like static container
     product: Product
     quantity: int
 
-@dataclass
-class Shop: #don't need to track the array
-    cash: float
-    stock: List[ProductStock]
+@dataclass 
+class Shop: 
+    cash: float = 0.0
+    stock: List[ProductStock] = field(default_factory=list)
 
 @dataclass # dataclasses new on Python 3.7 - you will have to update to get them
 class Customer:
@@ -25,9 +25,11 @@ class Customer:
     shopping_list: List[ProductStock]
 
 def create_and_stock_shop():
-    s = Shop(200.0, [])
+    s = Shop () #(200.0, [])
     with open('../stock.csv') as csv_file: #../stock.csv - the .. means go up one level to retrieve the file so all programmes can access it
         csv_reader = csv.reader(csv_file,delimiter=',')
+        first row = next(csv_reader)
+        print(first row)
         line_count = 0
         for row in csv_reader:
             p = Product(row[0], float(row[1]))
