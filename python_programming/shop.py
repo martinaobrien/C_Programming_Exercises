@@ -13,20 +13,11 @@ class ProductStock: #all treated like static container
     product: Product
     quantity: int
 
-<<<<<<< HEAD
 @dataclass
 class Shop: 
     cash: float
     stock: List[ProductStock]  #means that when a new shop gets created, python uses a factory to generate a new lists
      # dataclasses new on Python 3.7 - you will have to update to get them
-=======
-@dataclass 
-class Shop: 
-    cash: float = 0.0
-    stock: List[ProductStock] = field(default_factory=list)
-
-@dataclass # dataclasses new on Python 3.7 - you will have to update to get them
->>>>>>> 794fff78c079dbe5a5de4bc70fbcdf746a482457
 class Customer:
     name:str
     budget:float
