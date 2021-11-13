@@ -15,8 +15,8 @@ class ProductStock: #all treated like static container
 
 @dataclass
 class Shop: 
-    cash: float
-    stock: List[ProductStock]  #means that when a new shop gets created, python uses a factory to generate a new lists
+    cash: float # = 0.0 - this doesn't work
+    stock: List[ProductStock] # = field(default_factory=List) - this doesn't work #means that when a new shop gets created, python uses a factory to generate a new lists
      # dataclasses new on Python 3.7 - you will have to update to get them
 class Customer:
     name:str
@@ -24,11 +24,12 @@ class Customer:
     shopping_list: List[ProductStock]
 
 def create_and_stock_shop():#treat the first line of the csv different from the rest
-    s = Shop(200.0, [])
+    s = Shop (200.0, []) #() (200.0, []) This doesn't work
     with open('../stock.csv') as csv_file: #../stock.csv - the .. means go up one level to retrieve the file so all programmes can access it
         csv_reader = csv.reader(csv_file,delimiter=',')
         first_row = next(csv_reader)
-        print (first_row)
+        #print (first_row)
+        s.cash = float (first_row[0])
         #line_count = 0
         for row in csv_reader:
             p = Product(row[0], float(row[1]))
@@ -36,6 +37,10 @@ def create_and_stock_shop():#treat the first line of the csv different from the 
             s.stock.append(ps)
             #print(ps)
     return s
+
+def read customer (file_name):
+    with open('../customer.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
 
 def print_product(p):
     print(f'\nPRODUCT NAME: {p.name} \nPRODUCT PRICE: {p.price}')#f embeds a variable in a string(python 3.6 - put your variable in {})
