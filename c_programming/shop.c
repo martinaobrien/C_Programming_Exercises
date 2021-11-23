@@ -59,7 +59,7 @@ struct Shop createAndStockShop()//need to read in a file
     if (fp == NULL)
         exit(EXIT_FAILURE); // error handling
 
-    while ((read = getline(&line, &len, fp)) != -1) {
+    while ((read = getline(&line, &len, fp)) != -1) { //this line gets called every iteratin of the loop
         //printf ("Retrieved line of length %zu:\n", read);
         //printf("%s IS A LINE", line);
         char *n = strtok(line, ",");
@@ -72,7 +72,7 @@ struct Shop createAndStockShop()//need to read in a file
         struct Product product = { name, price};
         struct ProductStock stockItem = { product, quantity};
         shop.stock[shop.index++] = stockItem; //adding in stock - at the end of this method, the shop should have all the items from the csv stored in it
-        //printf("NAME OF PRODUCT %s PRICE %.2f QUANTITY %d\n", name, price, quantity);
+        printf("NAME OF PRODUCT %s PRICE %.2f QUANTITY %d\n", name, price, quantity);
         }
 
         return shop; 
