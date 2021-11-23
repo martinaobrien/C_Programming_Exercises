@@ -1,5 +1,4 @@
-#written in procedural style - Python supports various programs
-from dataclasses import dataclass # closest to the struct
+from dataclasses import dataclass # closest to the struct #written in procedural style - Python supports various programs
 from typing import List
 import csv
 
@@ -27,7 +26,7 @@ class Customer:
 
 def create_and_stock_shop():#treat the first line of the csv different from the rest
     s = Shop (200.0, []) #() (200.0, []) This doesn't work
-    with open('../stock.csv') as csv_file: #../stock.csv - the .. means go up one level to retrieve the file so all programmes can access it
+    with open('../stock1.csv') as csv_file: #../stock.csv - the .. means go up one level to retrieve the file so all programmes can access it
         csv_reader = csv.reader(csv_file,delimiter=',')
         #first_row = next(csv_reader)
         #print (first_row)
