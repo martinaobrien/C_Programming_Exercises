@@ -72,7 +72,7 @@ struct Shop createAndStockShop()//need to read in a file
         struct Product product = { name, price};
         struct ProductStock stockItem = { product, quantity};
         shop.stock[shop.index++] = stockItem; //adding in stock - at the end of this method, the shop should have all the items from the csv stored in it
-        printf("NAME OF PRODUCT %s PRICE %.2f QUANTITY %d\n", name, price, quantity);
+        //printf("NAME OF PRODUCT %s PRICE %.2f QUANTITY %d\n", name, price, quantity);
         }
 
         return shop; 
