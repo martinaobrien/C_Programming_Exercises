@@ -60,3 +60,5 @@ int main ()
     return 0;
 } //it is importnat to know who is responsible to what
 //from a user perspective it is the same
+// evolution of programming languages c doesn't do a great job of extracting the low level details of the operating system you are running on, directly trying to use a library that comes from windows
+// more high level programe languages do a much better job of extracting the underlying system that you are using
