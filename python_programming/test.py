@@ -43,7 +43,7 @@ class Customer: # all customers would fit her - one who can afford, one who does
             ps = ProductStock(p, quantity)
             self.shopping_List.append(ps)
 
-	def calculate_costs(self,price_list):
+	def calculate_costs(self,price_list): #key method for interacting the customer with 
 		for shop_item in price_list:
 			for list_item in self.shopping_list:
 				if (list_item.name() == shop_item.name()):
