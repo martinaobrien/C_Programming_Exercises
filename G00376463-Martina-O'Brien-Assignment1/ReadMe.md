@@ -1,12 +1,17 @@
-## Multi-Paradigm Programming Project 2021
+# Multi-Paradigm Programming Project 2021
+
+## About the Project
+
+### Folder Contents
 
 This folder contains the all files needed for the Multi Paradigm Programming Shop Assignment submitted as part of the Higher Diploma in Data Analytics in GMIT 2021/2021. 
 These are:
 
-Shop Code:
-	Procedural in C
-	Procedural in Python
-	Object Orientated in Python
+### Shop Code:
+- Shop in Procedural Program in C (shop.c)
+- Shop in Procedural Program in Python (shop.py)
+- Shop in Object Orientated in Python (shop_oop.py)
+
 
 CSV files:	Greedy Gemma
 	No Money Mark
@@ -15,11 +20,11 @@ CSV files:	Greedy Gemma
 
 Project Report 
 
-Purpose of the Assignment: 
+## Purpose of the Assignment: 
 
 The assignment was to build a Shop program with the below functionality as outlined below and compare the implementations of each shop instance. This document serves to provide the user with an overview of the project and how to run the code on their own machne. 
 
-Functionality of the Shop as per project assignment:
+### Functionality of the Shop as per project assignment:
 
 The shop CSV should hold the initial cash value for the shop.
 Read in customer orders from a CSV file.
@@ -42,7 +47,7 @@ Notes:
 Report
 The report included in the project should compare the solutions acheived using the procedural and object orientated approaches.
 
-Running the Shop:
+## Running the Program:
 
 Procedural Code
 C Shop
