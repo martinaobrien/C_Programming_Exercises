@@ -1,12 +1,11 @@
 # Multi-Paradigm Programming Project 2021
+#### Module: Multi Paradigm Programme 52960 
+#### Student: Martina O'Brien - G00376463
+#### Date Submitted: 22nd of December 2022
 
 ## About the Project
-This project is submitted as part of the requirements for the Higher Diploma in Data Analytics in GMIT for the Winter Semester 2021
-#### Module: Multi Paradigm Programme 52960
-#### Lecturer: Dominic Carr
-#### Student: Martina O'Brien
-#### Student No: G00376463
-#### Date Submitted: 22nd of December 2022
+
+This project is submitted as part of the requirements for the Higher Diploma in Data Analytics in GMIT for the Winter Semester 2021 for the module Multi Paradigm Programming with Lecturer Dominic Carr
 
 ### Folder Contents
 
