@@ -4,21 +4,26 @@
 
 ### Folder Contents
 
-This folder contains the all files needed for the Multi Paradigm Programming Shop Assignment submitted as part of the Higher Diploma in Data Analytics in GMIT 2021/2021. 
-These are:
+This folder contains the all sub folders needed for the Multi Paradigm Programming Shop Assignment submitted as part of the Higher Diploma in Data Analytics in GMIT 2021/2021. 
+These include:
+## ReadMe
+This file provides
+- an overview of the project and its requirements
+- information on how to run the programs in each instance
 
-### Shop Code:
+### Shop Folders(there is one folder for each instance):
 - Shop in Procedural Program in C (shop.c)
 - Shop in Procedural Program in Python (shop.py)
 - Shop in Object Orientated in Python (shop_oop.py)
 
+### Data Folder:
+- good_customer
+- no_funds_customer
+- greedy_customer
+- shop_stock
 
-CSV files:	Greedy Gemma
-	No Money Mark
-	All okay
-	Stock
-
-Project Report 
+### Project Report 
+A pdf file containing comparisons and analysis of the implementation of each of the 3 shops outline above
 
 ## Purpose of the Assignment: 
 
@@ -68,6 +73,7 @@ The Shop's User Interface:
 			Option 3:
 			Option 4:
 			Option 5:
+			Option 6: 
 	
 
 
@@ -77,12 +83,3 @@ Option 3 gives the user the option to enter a live mode, where the user can ente
 Test files
 There are several test files in the main folder.
 
-customer.csv, customer1.csv and customer2.csv are customer file containing orders that the shop can fill from the stock at the start of the program execution. The shop stock and cash is updated after every successful order has been processed whether this is a live or batch order. Therefore it is possible that one of these orders cannot be completly filled if the shop stock has already been sold.
-There are also some test files as required that the shop cannot completely fulfill.
-
-fred.csv contains an item that the shop does not stock at all.
-joe.csv contains several products that the shop does not stock at all.
-mike.csv contains two products, including one item that the shop does not stock.
-bad.csv and broke.csv are customer files where the customer does not have enough cash to pay for their shopping order.
-poor.csv is a customer file where the customer does not have enough cash to purchase all the items on their shopping order.
-coke.csv is a customer file where the customer is looking for a higher quantity of a product than the shop has in stock.
